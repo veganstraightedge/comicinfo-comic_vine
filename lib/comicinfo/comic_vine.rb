@@ -25,5 +25,21 @@ module ComicInfo
 
     def name     = 'Comic Vine'
     def home_url = 'https://comicvine.gamespot.com/'
+
+    # What the issue still needs before it can be searched for, or nil
+    def missing_details issue
+      return if present(issue.series) && present(issue.number)
+
+      'Comic Vine needs a Series and a Number to search for.'
+    end
+
+    private
+
+    # The text, trimmed, or nil when it's blank
+    def present text
+      trimmed = text.to_s.strip
+
+      trimmed unless trimmed.empty?
+    end
   end
 end
