@@ -1,0 +1,37 @@
+{
+  "error": "OK",
+  "limit": 100,
+  "offset": 0,
+  "number_of_page_results": 2,
+  "number_of_total_results": 2,
+  "status_code": 1,
+  "results": [
+    {
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-88888/",
+      "count_of_issues": 3,
+      "id": 88888,
+      "name": "Futuristic Tales",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-1/",
+        "id": 1,
+        "name": "Newer Press"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/futuristic-tales/4050-88888/",
+      "start_year": "2026"
+    },
+    {
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-23437/",
+      "count_of_issues": 1,
+      "id": 23437,
+      "name": "Cory Doctorow's Futuristic Tales of the Here and Now",
+      "publisher": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/publisher/4010-1190/",
+        "id": 1190,
+        "name": "IDW Publishing"
+      },
+      "site_detail_url": "https://comicvine.gamespot.com/cory-doctorows-futuristic-tales-of-the-here-and-no/4050-23437/",
+      "start_year": "2007"
+    }
+  ],
+  "version": "1.0"
+}

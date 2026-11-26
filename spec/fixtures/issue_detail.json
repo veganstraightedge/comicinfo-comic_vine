@@ -1,0 +1,82 @@
+{
+  "error": "OK",
+  "limit": 1,
+  "offset": 0,
+  "number_of_page_results": 1,
+  "number_of_total_results": 1,
+  "status_code": 1,
+  "results": {
+    "aliases": null,
+    "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-140529/",
+    "associated_images": [],
+    "character_credits": [{"id": 1, "name": "Anda"}, {"id": 2, "name": "Lucy Kemp"}],
+    "character_died_in": [],
+    "concept_credits": [],
+    "cover_date": "2007-10-01",
+    "date_added": "2008-10-16 05:25:47",
+    "date_last_updated": "2010-06-09 18:05:49",
+    "deck": null,
+    "description": "<i>For 12-year-old Anda, getting paid real money to kill the characters of players who were cheating in her favorite online computer game was a win-win situation. Until she found out who was paying her, and what those characters meant to the livelihood of children around the world.</i>",
+    "first_appearance_characters": null,
+    "first_appearance_concepts": null,
+    "first_appearance_locations": null,
+    "first_appearance_objects": null,
+    "first_appearance_storyarcs": null,
+    "first_appearance_teams": null,
+    "has_staff_review": false,
+    "id": 140529,
+    "issue_number": "1",
+    "location_credits": [{"id": 3, "name": "Coursegold"}],
+    "name": "Anda's Game",
+    "object_credits": [],
+    "person_credits": [
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-56410/",
+        "id": 56410,
+        "name": "Dara Naraghi",
+        "site_detail_url": "https://comicvine.gamespot.com/dara-naraghi/4040-56410/",
+        "role": "writer"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-57222/",
+        "id": 57222,
+        "name": "Esteve Polls",
+        "site_detail_url": "https://comicvine.gamespot.com/esteve-polls/4040-57222/",
+        "role": "artist, writer"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-48472/",
+        "id": 48472,
+        "name": "Neil Uyetake",
+        "site_detail_url": "https://comicvine.gamespot.com/neil-uyetake/4040-48472/",
+        "role": "letterer"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-5329/",
+        "id": 5329,
+        "name": "Sam Kieth",
+        "site_detail_url": "https://comicvine.gamespot.com/sam-kieth/4040-5329/",
+        "role": "cover"
+      },
+      {
+        "api_detail_url": "https://comicvine.gamespot.com/api/person/4040-58534/",
+        "id": 58534,
+        "name": "Ted Adams",
+        "site_detail_url": "https://comicvine.gamespot.com/ted-adams/4040-58534/",
+        "role": "editor"
+      }
+    ],
+    "site_detail_url": "https://comicvine.gamespot.com/cory-doctorows-futuristic-tales-of-the-here-and-no/4000-140529/",
+    "store_date": null,
+    "story_arc_credits": [{"id": 4, "name": "Futuristic Tales"}],
+    "team_credits": [{"id": 5, "name": "The Fahrenheits"}],
+    "team_disbanded_in": [],
+    "volume": {
+      "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-23437/",
+      "id": 23437,
+      "name": "Cory Doctorow's Futuristic Tales of the Here and Now",
+      "site_detail_url": "https://comicvine.gamespot.com/cory-doctorows-futuristic-tales-of-the-here-and-no/4050-23437/"
+    }
+  },
+  "version": "1.0"
+}

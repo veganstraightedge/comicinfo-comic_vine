@@ -1,0 +1,25 @@
+{
+  "error": "OK",
+  "limit": 100,
+  "offset": 0,
+  "number_of_page_results": 1,
+  "number_of_total_results": 1,
+  "status_code": 1,
+  "results": [
+    {
+      "api_detail_url": "https://comicvine.gamespot.com/api/issue/4000-140529/",
+      "cover_date": "2007-10-01",
+      "id": 140529,
+      "issue_number": "1",
+      "name": "Anda's Game",
+      "site_detail_url": "https://comicvine.gamespot.com/cory-doctorows-futuristic-tales-of-the-here-and-no/4000-140529/",
+      "volume": {
+        "api_detail_url": "https://comicvine.gamespot.com/api/volume/4050-23437/",
+        "id": 23437,
+        "name": "Cory Doctorow's Futuristic Tales of the Here and Now",
+        "site_detail_url": "https://comicvine.gamespot.com/cory-doctorows-futuristic-tales-of-the-here-and-no/4050-23437/"
+      }
+    }
+  ],
+  "version": "1.0"
+}
