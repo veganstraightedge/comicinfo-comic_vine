@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/veganstraightedge/comicinfo.git
   revision: 2e346d1a66b94c95405d71dc4e35ee41ea94311f
-  branch: release-2.3.0
   specs:
     comicinfo (2.3.0)
       nokogiri (>= 1.19.3)

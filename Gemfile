@@ -5,7 +5,7 @@ gemspec
 
 # comicinfo 2.3.0 adds ComicInfo::Match, Issue#rank and Issue#with_blanks_filled_from.
 # Remove this line once comicinfo 2.3.0 is on rubygems.org.
-gem 'comicinfo', github: 'veganstraightedge/comicinfo', branch: 'release-2.3.0'
+gem 'comicinfo', github: 'veganstraightedge/comicinfo'
 
 gem 'irb'
 gem 'rake'
