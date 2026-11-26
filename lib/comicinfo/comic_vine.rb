@@ -1,6 +1,7 @@
 require 'comicinfo'
 require_relative 'comic_vine/client'
 require_relative 'comic_vine/errors'
+require_relative 'comic_vine/found_issue'
 require_relative 'comic_vine/version'
 
 module ComicInfo
@@ -58,6 +59,17 @@ module ComicInfo
       end
 
       issue.rank matches
+    end
+
+    # Everything Comic Vine knows about the match's issue and its series, as a ComicInfo::Issue
+    def issue match
+      id = Integer match.id, 10, exception: false
+      raise APIError, "No issue with the ID #{match.id}" unless id
+
+      found  = client.issue id
+      volume = client.volume found.dig(:volume, :id)
+
+      FoundIssue.new(issue: found, volume:).to_issue
     end
 
     private

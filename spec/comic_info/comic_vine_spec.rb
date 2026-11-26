@@ -69,4 +69,42 @@ RSpec.describe ComicInfo::ComicVine do
       expect { unnamed.matches issue }.to raise_error(ComicInfo::ComicVine::HTTPError, message) { expect(it.status).to eq 403 }
     end
   end
+
+  describe '#issue' do
+    subject(:found) { comic_vine.issue match }
+
+    let(:match) { comic_vine.matches(issue).first }
+
+    it 'has everything Comic Vine knows' do
+      expect(found).to be_a ComicInfo::Issue
+      expect(found.series).to eq "Cory Doctorow's Futuristic Tales of the Here and Now"
+      expect(found.number).to eq '1'
+      expect(found.title).to eq "Anda's Game"
+      expect(found.count).to eq 1
+      expect(found.year).to eq 2007
+      expect(found.month).to eq 10
+      expect(found.day).to eq(-1)
+      expect(found.publisher).to eq 'IDW Publishing'
+      expect(found.summary).to start_with 'For 12-year-old Anda, getting paid real money'
+      expect(found.summary).not_to include '<i>'
+      expect(found.web_links).to eq [match.site_url]
+    end
+
+    it 'gives credits to their roles' do
+      expect(found.writer).to eq 'Dara Naraghi, Esteve Polls'
+      expect(found.penciller).to eq 'Esteve Polls'
+      expect(found.inker).to eq 'Esteve Polls'
+      expect(found.colorist).to eq ''
+      expect(found.letterer).to eq 'Neil Uyetake'
+      expect(found.cover_artist).to eq 'Sam Kieth'
+      expect(found.editor).to eq 'Ted Adams'
+    end
+
+    it 'has characters, teams, locations and story arcs' do
+      expect(found.characters).to eq ['Anda', 'Lucy Kemp']
+      expect(found.teams).to eq ['The Fahrenheits']
+      expect(found.locations).to eq ['Coursegold']
+      expect(found.story_arcs).to eq ['Futuristic Tales']
+    end
+  end
 end
