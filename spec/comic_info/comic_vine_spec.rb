@@ -48,5 +48,25 @@ RSpec.describe ComicInfo::ComicVine do
       expect(match.details).to eq 'IDW Publishing · Cover date 2007-10-01'
       expect(match.site_url).to eq 'https://comicvine.gamespot.com/cory-doctorows-futuristic-tales-of-the-here-and-no/4000-140529/'
     end
+
+    it "raises Comic Vine's own error for a wrong key" do
+      wrong_key = described_class.new api_key:    'wrong',
+                                      base_url:   RSpec.configuration.comic_vine_server.base_url,
+                                      user_agent: ComicVineServer::USER_AGENT
+
+      message = 'Comic Vine said: Invalid API Key.'
+
+      expect { wrong_key.matches issue }.to raise_error(ComicInfo::ComicVine::APIError, message) { expect(it.reason).to eq 'Invalid API Key' }
+    end
+
+    it 'raises an HTTP error when Comic Vine refuses the request' do
+      unnamed = described_class.new api_key:    ComicVineServer::API_KEY,
+                                    base_url:   RSpec.configuration.comic_vine_server.base_url,
+                                    user_agent: ''
+
+      message = 'Comic Vine answered with HTTP status 403.'
+
+      expect { unnamed.matches issue }.to raise_error(ComicInfo::ComicVine::HTTPError, message) { expect(it.status).to eq 403 }
+    end
   end
 end
